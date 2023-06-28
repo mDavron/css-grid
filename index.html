@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .grid-container {
+      width: 400px;
+      height: 400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      /* gap: 10px; */
+      top: 50%;
+      transform: rotate(45deg);
+    }
+    .item-1 {
+      grid-column: 1/4;
+      grid-row: 1/4;
+      background-image: linear-gradient(to right, #8360c3, #2ebf91);
+    }
+    .item-2 {
+      grid-column: 4/7;
+      grid-row: 1/4;
+      background-image: linear-gradient(to right, #ff9966, #ff5e62);
+    }
+    .item-3 {
+      grid-column: 1/4;
+      grid-row: 4/7;
+      background-image: linear-gradient(
+        to right,
+        rgb(242, 112, 156),
+        rgb(255, 148, 114)
+      );
+    }
+    .item-4 {
+      grid-column: 4/7;
+      grid-row: 4/7;
+      background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+    }
+    .item-5 {
+      grid-column: 3/4;
+      grid-row: 3/4;
+      background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+    }
+    .item-6 {
+      grid-column: 4/5;
+      grid-row: 3/4;
+      background-image: linear-gradient(
+        to right,
+        rgb(242, 112, 156),
+        rgb(255, 148, 114)
+      );
+    }
+    .item-8 {
+      grid-column: 4/5;
+      grid-row: 4/5;
+      background-image: linear-gradient(to right, #8360c3, #2ebf91);
+    }
+    .item-7 {
+      grid-column: 3/4;
+      grid-row: 4/5;
+      /* background: blue; */
+      background-image: linear-gradient(to right, #ff9966, #ff5e62);
+    }
+  </style>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item item-1"></div>
+      <div class="grid-item item-2"></div>
+      <div class="grid-item item-3"></div>
+      <div class="grid-item item-4"></div>
+      <div class="grid-item item-5"></div>
+      <div class="grid-item item-6"></div>
+      <div class="grid-item item-7"></div>
+      <div class="grid-item item-8"></div>
+    </div>
+  </body>
+</html>
